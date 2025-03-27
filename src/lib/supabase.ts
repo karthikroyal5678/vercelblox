@@ -1,10 +1,24 @@
-import { createClient } from '@supabase/supabase-js';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '../../lib/supabase';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+export function VerifyEmail() {
+  const navigate = useNavigate();
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Missing Supabase environment variables');
+  useEffect(() => {
+    const checkSession = async () => {
+      const { data } = await supabase.auth.getSession();
+      if (data.session) {
+        navigate('/'); // Redirect to home page
+      }
+    };
+
+    checkSession();
+  }, [navigate]);
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+      <h1 className="text-white text-xl">Verifying email...</h1>
+    </div>
+  );
 }
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
