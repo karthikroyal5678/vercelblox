@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://bloxfruitsitems.com/sitemap.xml
