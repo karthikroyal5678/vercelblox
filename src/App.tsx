@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { Navbar } from './components/Navbar';
 import { CommonPage } from './pages/values/Common';
 import { UncommonPage } from './pages/values/Uncommon';
@@ -29,7 +30,7 @@ const App = () => {
         <Navbar />
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<CalculatorPage />} />
             <Route path="/calculator" element={<CalculatorPage />} />
             <Route path="/values/common" element={<CommonPage />} />
             <Route path="/values/uncommon" element={<UncommonPage />} />
@@ -52,6 +53,20 @@ const App = () => {
 };
 
 const HomePage = () => {
+  const [holdingTime, setHoldingTime] = useState("00:00:00");
+
+  useEffect(() => {
+    const startTime = Date.now();
+    const interval = setInterval(() => {
+      const elapsedTime = Date.now() - startTime;
+      const hours = String(Math.floor(elapsedTime / 3600000)).padStart(2, '0');
+      const minutes = String(Math.floor((elapsedTime % 3600000) / 60000)).padStart(2, '0');
+      const seconds = String(Math.floor((elapsedTime % 60000) / 1000)).padStart(2, '0');
+      setHoldingTime(`${hours}:${minutes}:${seconds}`);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="text-center py-10">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">The Most Trusted Value List for Blox Fruits</h2>
@@ -75,6 +90,14 @@ const HomePage = () => {
         transition={{ duration: 1 }}>
         <h3 className="text-xl sm:text-2xl">Stock Reset Countdown</h3>
         <p className="text-4xl font-bold">01:24:01</p>
+      </motion.div>
+
+      <motion.div className="text-center py-5 text-lg sm:text-xl lg:text-2xl"
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1 }}>
+        <h3 className="text-xl sm:text-2xl">Values Holding Time</h3>
+        <p className="text-4xl font-bold">{holdingTime}</p>
       </motion.div>
 
       <div className="flex justify-center gap-2 sm:gap-5 mt-5 flex-wrap">

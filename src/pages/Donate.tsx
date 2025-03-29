@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Heart } from 'lucide-react';
 
 const DONATION_TIERS = [
-  { id: 'tier1', amount: 1, description: 'Basic Support' },
-  { id: 'tier2', amount: 2, description: 'Silver Supporter' },
   { id: 'tier3', amount: 5, description: 'Gold Supporter' },
   { id: 'tier4', amount: 6, description: 'Diamond Supporter' },
   { id: 'tier5', amount: 10, description: 'Legendary Supporter' },
@@ -15,9 +13,7 @@ export function DonatePage() {
   const [error, setError] = useState<string | null>(null);
 
   const getDonationUrl = (amount: number) => {
-    if (amount === 1 || amount === 2) {
-      return "https://karthikroyal0.gumroad.com/l/ctwllu?_gl=1*17l60k7*_ga*NzQxODA2NzY4LjE3NDI0MTk1NDk.*_ga_6LJN6D94N6*MTc0MjQyNDU0OS4yLjEuMTc0MjQyNTU1NC4wLjAuMA..";
-    } else if (amount === 5 || amount === 6) {
+    if (amount === 5 || amount === 6) {
       return "https://karthikroyal0.gumroad.com/l/ctmld?_gl=1*qpdxl3*_ga*NzQxODA2NzY4LjE3NDI0MTk1NDk.*_ga_6LJN6D94N6*MTc0MjQyNDU0OS4yLjEuMTc0MjQyNTU1OS4wLjAuMA..";
     } else if (amount === 10) {
       return "https://karthikroyal0.gumroad.com/l/flonw?_gl=1*18tiivk*_ga*NzQxODA2NzY4LjE3NDI0MTk1NDk.*_ga_6LJN6D94N6*MTc0MjQyNDU0OS4yLjEuMTc0MjQyNTY1NS4wLjAuMA..";
