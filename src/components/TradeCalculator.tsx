@@ -148,37 +148,38 @@ export function TradeCalculator() {
       : valueDifference > 0
       ? 'You are overpaying'
       : 'They are overpaying';
-  const statusColor =
-    Math.abs(valueDifference) < 100000 ? 'text-green-500' : 'text-red-500';
+  
+   const statusColor =
+     Math.abs(valueDifference) < 100000 ? 'text-green-500' : 'text-red-500';
 
-  return (
-    <>
-      <div className="bg-gray-800/50 p-4 md:p-8 rounded-lg">
-        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
-          <TradeSection side="you" tradeSlot={yourTrade} setTradeSlot={setYourTrade} />
-          <div className="flex flex-col items-center justify-center">
-            <div className={cn('text-lg font-semibold mb-2', statusColor)}>
-              {tradeStatus}
-            </div>
-            <div className="text-gray-400 text-sm">
-              Difference: {Math.abs(valueDifference).toLocaleString()}
-            </div>
-          </div>
-          <TradeSection side="them" tradeSlot={theirTrade} setTradeSlot={setTheirTrade} />
-        </div>
-      </div>
+   return (
+     <>
+       <div className="bg-gray-800/50 p-4 md:p-8 rounded-lg">
+         <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+           <TradeSection side="you" tradeSlot={yourTrade} setTradeSlot={setYourTrade} />
+           <div className="flex flex-col items-center justify-center">
+             <div className={cn('text-lg font-semibold mb-2', statusColor)}>
+               {tradeStatus}
+             </div>
+             <div className="text-gray-400 text-sm">
+               Difference: {Math.abs(valueDifference).toLocaleString()}
+             </div>
+           </div>
+           <TradeSection side="them" tradeSlot={theirTrade} setTradeSlot={setTheirTrade} />
+         </div>
+       </div>
 
-      <ItemSelectModal
-        open={modalOpen}
-        onClose={() => {
-          setModalOpen(false);
-          setActiveSlot(null);
-        }}
-        onSelect={handleItemSelect}
-        selectedCategory={selectedCategory}
-        onCategoryChange={setSelectedCategory}
-        categories={categories}
-      />
-    </>
-  );
+       <ItemSelectModal
+         open={modalOpen}
+         onClose={() => {
+           setModalOpen(false);
+           setActiveSlot(null);
+         }}
+         onSelect={handleItemSelect}
+         selectedCategory={selectedCategory}
+         onCategoryChange={setSelectedCategory}
+         categories={categories}
+       />
+     </>
+   );
 }
