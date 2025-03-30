@@ -15,7 +15,7 @@ import { FAQPage } from "./pages/information/FAQ";
 import { UsageGuidePage } from "./pages/information/UsageGuide";
 import { DonatePage } from "./pages/Donate";
 
-import GoogleAd from "./pages/values/GoogleAd"; // Ensure it's inside `components`
+import GoogleAd from "./components/GoogleAd"; // Ensure it's inside `components`
 import {TradeCalculator} from "./components/TradeCalculator"; // Corrected path
 
 const adSlots = [
