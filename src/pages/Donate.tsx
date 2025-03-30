@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Heart } from 'lucide-react';
-import GoogleAd from "../components/GoogleAd"; // Ensure it's inside `components`
+
 const DONATION_TIERS = [
   { id: 'tier3', amount: 5, description: 'Gold Supporter' },
   { id: 'tier4', amount: 6, description: 'Diamond Supporter' },
@@ -11,13 +11,7 @@ export function DonatePage() {
   const [selectedTier, setSelectedTier] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const adSlots = [
-    "1234567894", "1234567895", "1234567896", "1234567897",
-    "1234567898", "1234567899", "1234567800", "1234567801",
-    "1234567802", "1234567803", "1234567804", "1234567805",
-    "1234567806", "1234567807", "1234567808", "1234567809",
-    "1234567810", "1234567811", "1234567812", "1234567813"
-  ];
+
   const getDonationUrl = (amount: number) => {
     if (amount === 5 || amount === 6) {
       return "https://karthikroyal0.gumroad.com/l/ctmld?_gl=1*qpdxl3*_ga*NzQxODA2NzY4LjE3NDI0MTk1NDk.*_ga_6LJN6D94N6*MTc0MjQyNDU0OS4yLjEuMTc0MjQyNTU1OS4wLjAuMA..";
@@ -126,11 +120,7 @@ export function DonatePage() {
           <p>
             By donating, you agree to our terms of service and privacy policy.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-8">
-            {adSlots.map((slot, index) => (
-              <GoogleAd key={index} adSlot={slot} width={120} height={120} />
-         ))}
-      </div>
+          
         </div>
       </div>
     </div>
