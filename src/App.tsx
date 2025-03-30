@@ -1,55 +1,34 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
-import { CommonPage } from "./pages/values/Common";
-import { UncommonPage } from "./pages/values/Uncommon";
-import { RarePage } from "./pages/values/Rare";
-import { LegendaryPage } from "./pages/values/Legendary";
-import { MythicalPage } from "./pages/values/Mythical";
-import { GamepassPage } from "./pages/values/Gamepass";
-import { LimitedPage } from "./pages/values/Limited";
-import { CalculatorPage } from "./pages/Calculator";
-import { LoginPage } from "./pages/auth/Login";
-import { RegisterPage } from "./pages/auth/Register";
-import { ForgotPasswordPage } from "./pages/auth/ForgotPassword";
-import { FAQPage } from "./pages/information/FAQ";
-import { UsageGuidePage } from "./pages/information/UsageGuide";
-import { DonatePage } from "./pages/Donate";
-
-import GoogleAd from "./components/GoogleAd"; // Ensure it's inside `components`
-import {TradeCalculator} from "./components/TradeCalculator"; // Corrected path
-
-const adSlots = [
-  "1234567894", "1234567895", "1234567896", "1234567897",
-  "1234567898", "1234567899", "1234567800", "1234567801",
-  "1234567802", "1234567803", "1234567804", "1234567805",
-  "1234567806", "1234567807", "1234567808", "1234567809",
-  "1234567810", "1234567811", "1234567812", "1234567813"
-];
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { CommonPage } from './pages/values/Common';
+import { UncommonPage } from './pages/values/Uncommon';
+import { RarePage } from './pages/values/Rare';
+import { LegendaryPage } from './pages/values/Legendary';
+import { MythicalPage } from './pages/values/Mythical';
+import { GamepassPage } from './pages/values/Gamepass';
+import { LimitedPage } from './pages/values/Limited';
+import { CalculatorPage } from './pages/Calculator';
+import { LoginPage } from './pages/auth/Login';
+import { RegisterPage } from './pages/auth/Register';
+import { ForgotPasswordPage } from './pages/auth/ForgotPassword';
+import { FAQPage } from './pages/information/FAQ';
+import { UsageGuidePage } from './pages/information/UsageGuide';
+import { DonatePage } from './pages/Donate';
+import { TradeCalculator } from './components/TradeCalculator';
 
 const HomePage = () => {
   return (
     <div className="text-center py-10 px-4">
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-        The Most Trusted Value List for Blox Fruits
-      </h2>
-      <p className="text-lg sm:text-xl mt-2 text-gray-300">
-        NEW! Check out our trade calculator!
-      </p>
-
-      {/* Google Ads Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 my-8">
-        {adSlots.map((slot, index) => (
-          <GoogleAd key={index} adSlot={slot} width={120} height={120} />
-        ))}
-      </div>
-
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">The Most Trusted Value List for Blox Fruits</h2>
+      <p className="text-lg sm:text-xl mt-2">NEW! Check out our trade calculator!</p>
+      
       {/* Trade Calculator Section */}
       <div className="container mx-auto px-4 mt-16">
-        <div className="max-w-4xl mx-auto bg-gray-800 p-6 rounded-lg shadow-lg">
-          <h1 className="text-3xl font-bold text-white mb-6 text-center">
-            Trade Calculator
-          </h1>
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-3xl font-bold text-white mb-8">Trade Calculator</h1>
           <TradeCalculator />
+          
+          
         </div>
       </div>
     </div>
@@ -85,7 +64,5 @@ const App = () => {
     </Router>
   );
 };
-
-
 
 export default App;
