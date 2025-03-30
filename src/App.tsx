@@ -15,25 +15,41 @@ import { FAQPage } from './pages/information/FAQ';
 import { UsageGuidePage } from './pages/information/UsageGuide';
 import { DonatePage } from './pages/Donate';
 import { TradeCalculator } from './components/TradeCalculator';
+import GoogleAd from "./pages/values/GoogleAd";
+
+import { useEffect } from "react";
 
 const HomePage = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+    script.setAttribute("data-ad-client", "ca-pub-4679619533362780");
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <div className="text-center py-10 px-4">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">The Most Trusted Value List for Blox Fruits</h2>
       <p className="text-lg sm:text-xl mt-2">NEW! Check out our trade calculator!</p>
-      
+
+      {/* Insert Google Ad Here */}
+      <div className="my-8">
+        <GoogleAd adSlot="6712580132" />
+      </div>
+
       {/* Trade Calculator Section */}
       <div className="container mx-auto px-4 mt-16">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold text-white mb-8">Trade Calculator</h1>
           <TradeCalculator />
-          
-          
         </div>
       </div>
     </div>
   );
 };
+
+
 
 
 const App = () => {
