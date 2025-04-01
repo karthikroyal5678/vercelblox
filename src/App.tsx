@@ -16,6 +16,7 @@ import { UsageGuidePage } from './pages/information/UsageGuide';
 import { DonatePage } from './pages/Donate';
 import { TradeCalculator } from './components/TradeCalculator';
 import GoogleAd from "./pages/values/GoogleAd";
+// Removed unused import for sitemapChecker
 const HomePage = () => {
   return (
     <div className="text-center py-10 px-4">
@@ -69,21 +70,28 @@ const App = () => {
         <Navbar />
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/calculator" element={<CalculatorPage />} />
-            <Route path="/values/common" element={<CommonPage />} />
-            <Route path="/values/uncommon" element={<UncommonPage />} />
-            <Route path="/values/rare" element={<RarePage />} />
-            <Route path="/values/legendary" element={<LegendaryPage />} />
-            <Route path="/values/mythical" element={<MythicalPage />} />
-            <Route path="/values/gamepass" element={<GamepassPage />} />
-            <Route path="/values/limited" element={<LimitedPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
-            <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-            <Route path="/guide" element={<UsageGuidePage />} />
-            <Route path="/faq" element={<FAQPage />} />
-            <Route path="/donate" element={<DonatePage />} />
+
+            <Route path="/sitemap-checker/forgot-password" element={<ForgotPasswordPage />} />
+            <Route path="/sitemap-checker/home" element={<HomePage />} />
+            <Route path="/sitemap-checker/common" element={<CommonPage />} />
+            <Route path="/sitemap-checker/uncommon" element={<UncommonPage />} />
+            <Route path="/sitemap-checker/rare" element={<RarePage />} />
+            <Route path="/sitemap-checker/legendary" element={<LegendaryPage />} />
+            <Route path="/sitemap-checker/mythical" element={<MythicalPage />} />
+            <Route path="/sitemap-checker/gamepass" element={<GamepassPage />} />
+            <Route path="/sitemap-checker/limited" element={<LimitedPage />} />
+            <Route path="/sitemap-checker/calculator" element={<CalculatorPage />} />
+            <Route path="/sitemap-checker/login" element={<LoginPage />} />
+            <Route path="/sitemap-checker/register" element={<RegisterPage />} />
+            <Route path="/sitemap-checker/faq" element={<FAQPage />} />
+            <Route path="/sitemap-checker/guide" element={<UsageGuidePage />} />
+            <Route path="/sitemap-checker/donate" element={<DonatePage />} />
+            <Route path="/sitemap-checker/trade-calculator" element={<TradeCalculator />} />
+            <Route path="/sitemap-checker/google-ad" element={<GoogleAd adSlot="6712580132" />} />
+            <Route path="/sitemap-checker/home" element={<HomePage />} />
+            {/* Add more routes as needed */}
+            {/* Fallback route */}
+            <Route path="*" element={<div className="text-center text-2xl">404 - Page Not Found</div>} />
           </Routes>
         </main>
       </div>
