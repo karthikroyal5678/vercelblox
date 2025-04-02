@@ -16,6 +16,27 @@
         <loc>https://bloxfruitsitems.com/values/rare</loc>
     </url>
     <url>
+        <loc>https://bloxfruitsitems.com/values/legendary</loc>
+    </url>
+    <url>
+        <loc>https://bloxfruitsitems.com/values/mythical</loc>
+    </url>
+    <url>
+        <loc>https://bloxfruitsitems.com/values/limited</loc>
+    </url>
+    <url>
         <loc>https://bloxfruitsitems.com/guide</loc>
+    </url>
+    <url>
+        <loc>https://bloxfruitsitems.com/login</loc>
+    </url>
+    <url>
+        <loc>https://bloxfruitsitems.com/register</loc>
+    </url>
+    <url>
+        <loc>https://bloxfruitsitems.com/forgot-password</loc>
+    </url>
+    <url>
+        <loc>https://bloxfruitsitems.com/donate</loc>
     </url>
 </urlset>
