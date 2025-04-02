@@ -1,4 +1,11 @@
+# Redirect all requests to index.html (for SPA apps)
 [[redirects]]
   from = "/*"
   to = "/index.html"
+  status = 200
+
+# Redirect any nested sitemap request to the root sitemap_index.xml
+[[redirects]]
+  from = "/*/sitemap_index.xml"
+  to = "/sitemap_index.xml"
   status = 200
