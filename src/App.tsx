@@ -16,7 +16,8 @@ import { UsageGuidePage } from './pages/information/UsageGuide';
 import { DonatePage } from './pages/Donate';
 import { TradeCalculator } from './components/TradeCalculator';
 import GoogleAd from "./pages/values/GoogleAd";
-// Removed unused import for sitemapChecker
+
+
 const HomePage = () => {
   return (
     <div className="text-center py-10 px-4">
@@ -25,6 +26,7 @@ const HomePage = () => {
 
       {/* Insert Google Ad Here */}
       <div className="my-8">
+        
         <GoogleAd adSlot="6712580132" />
       </div>
 
@@ -60,9 +62,6 @@ const HomePage = () => {
   );
 };
 
-
-
-
 const App = () => {
   return (
     <Router>
@@ -85,7 +84,7 @@ const App = () => {
             <Route path="/guide" element={<UsageGuidePage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/donate" element={<DonatePage />} />
-          
+
           </Routes>
         </main>
       </div>
