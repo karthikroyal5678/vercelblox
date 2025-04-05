@@ -8,7 +8,6 @@ Sitemap: https://bloxfruitsitems.com/values/uncommon/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/rare/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/legendary/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/mythical/sitemap_index.xml
-Sitemaphttps://bloxfruitsitems.com/values/limited/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/guide/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/login/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/register/sitemap_index.xml
