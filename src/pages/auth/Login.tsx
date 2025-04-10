@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,87 +16,77 @@ const Login = () => {
   const [socialLoading, setSocialLoading] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  // Optional: Auto-redirect if already logged in
-  useEffect(() => {
-    const checkSession = async () => {
-      const { data } = await supabase.auth.getSession();
-      if (data.session) {
-        navigate('/');
-      }
-    };
-    checkSession();
-  }, [navigate]);
-
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-
+    
     if (!email || !password) {
       toast({
-        title: 'Error',
-        description: 'Please fill in all fields',
-        variant: 'destructive',
+        title: "Error",
+        description: "Please fill in all fields",
+        variant: "destructive",
       });
       return;
     }
-
+    
     setIsLoading(true);
-
+    
     try {
-      const { error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signInWithPassword({
         email,
-        password,
+        password
       });
-
+      
       if (error) throw error;
-
-      // Optional: redirect to a saved route (if using protected routes)
-      const redirectTo = localStorage.getItem('redirectAfterLogin') || '/';
-      localStorage.removeItem('redirectAfterLogin'); // clean up
+      
+      // Set auth data in localStorage for session persistence
       localStorage.setItem('isLoggedIn', 'true');
-
+      
       toast({
-        title: 'Welcome back!',
-        description: 'You have successfully logged in.',
+        title: "Welcome back!",
+        description: "You have successfully logged in.",
       });
-
-      navigate(redirectTo);
+      
+      // Redirect to home page
+      navigate('/');
     } catch (error: any) {
       toast({
-        title: 'Login failed',
-        description: error.message || 'Please check your credentials and try again.',
-        variant: 'destructive',
+        title: "Login failed",
+        description: error.message || "Please check your credentials and try again.",
+        variant: "destructive",
       });
     } finally {
       setIsLoading(false);
     }
   };
-
+  
   const handleSocialLogin = async (provider: 'google' | 'apple') => {
     setSocialLoading(provider);
-
+    
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider,
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
-        },
+          redirectTo: `${window.location.origin}/auth/callback`
+        }
       });
-
+      
       if (error) throw error;
-      // Redirect will happen automatically
+      
+      // We don't need to set auth data here as the redirect will happen
+      
     } catch (error: any) {
       toast({
-        title: 'Login failed',
+        title: "Login failed",
         description: `${provider} login failed. ${error.message}`,
-        variant: 'destructive',
+        variant: "destructive",
       });
       setSocialLoading(null);
     }
   };
-
+  
   return (
-    <AuthLayout
-      title="Welcome Back"
+    <AuthLayout 
+      title="Welcome Back" 
       subtitle="Sign in to continue your magical journey"
     >
       <form onSubmit={handleLogin} className="space-y-4">
@@ -111,12 +101,12 @@ const Login = () => {
             disabled={isLoading || socialLoading !== null}
           />
         </div>
-
+        
         <div className="space-y-2">
           <div className="flex justify-between items-center">
             <Label htmlFor="password">Password</Label>
-            <Link
-              to="/auth/forgot-password"
+            <Link 
+              to="/auth/forgot-password" 
               className="text-xs text-primary hover:underline"
             >
               Forgot?
@@ -131,15 +121,15 @@ const Login = () => {
             disabled={isLoading || socialLoading !== null}
           />
         </div>
-
-        <Button
-          type="submit"
-          className="w-full"
+        
+        <Button 
+          type="submit" 
+          className="w-full" 
           disabled={isLoading || socialLoading !== null}
         >
-          {isLoading ? 'Signing in...' : 'Sign In'}
+          {isLoading ? "Signing in..." : "Sign In"}
         </Button>
-
+        
         <div className="relative my-6">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-border"></div>
@@ -148,11 +138,11 @@ const Login = () => {
             <span className="bg-card px-2 text-muted-foreground">or continue with</span>
           </div>
         </div>
-
+        
         <div className="grid grid-cols-2 gap-3">
-          <Button
-            type="button"
-            variant="outline"
+          <Button 
+            type="button" 
+            variant="outline" 
             onClick={() => handleSocialLogin('google')}
             disabled={isLoading || socialLoading !== null}
             className="relative"
@@ -165,10 +155,9 @@ const Login = () => {
               </div>
             )}
           </Button>
-
-          <Button
-            type="button"
-            variant="outline"
+          <Button 
+            type="button" 
+            variant="outline" 
             onClick={() => handleSocialLogin('apple')}
             disabled={isLoading || socialLoading !== null}
             className="relative"
@@ -182,9 +171,9 @@ const Login = () => {
             )}
           </Button>
         </div>
-
+        
         <div className="text-center mt-6 text-sm text-muted-foreground">
-          Don&apos;t have an account?{' '}
+          Don't have an account?{' '}
           <Link to="/auth/register" className="text-primary hover:underline">
             Sign up
           </Link>
