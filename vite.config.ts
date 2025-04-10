@@ -1,10 +1,8 @@
-// vite.config.ts
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import fs from 'fs';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -12,11 +10,12 @@ export default defineConfig({
       name: 'configure-sitemap-headers',
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
+          // Serve sitemap_index.xml for all matching URLs
           if (req.url?.endsWith('/sitemap_index.xml')) {
             const sitemapPath = path.resolve(__dirname, 'public/sitemap_index.xml');
             if (fs.existsSync(sitemapPath)) {
-              res.setHeader('Content-Type', 'application/xml');
-              res.end(fs.readFileSync(sitemapPath));
+              res.setHeader('Content-Type', 'application/xml'); // Set correct Content-Type
+              res.end(fs.readFileSync(sitemapPath)); // Serve the sitemap content
               return;
             } else {
               res.statusCode = 404;
@@ -29,12 +28,7 @@ export default defineConfig({
       },
     },
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
-  },
   optimizeDeps: {
-    exclude: ['lucide-react'], // Exclude specific packages from optimization
+    exclude: ['lucide-react'],
   },
 });
