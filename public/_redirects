@@ -1,1 +1,4 @@
-/*/sitemap_index.xml  /sitemap_index.xml  200
+[[redirects]]
+  from = "/*/sitemap_index.xml"
+  to = "/sitemap_index.xml"
+  status = 200
