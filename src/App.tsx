@@ -23,7 +23,9 @@ const HomePage = () => {
     <div className="text-center py-10 px-4">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">The Most Trusted Value List for Blox Fruits</h2>
       <p className="text-lg sm:text-xl mt-2">NEW! Check out our trade calculator!</p>
-
+      <h1 className="text-lg sm:text-xl mt-2">Blox Fruits Values [2025] – Ultimate Trading Resource</h1>
+      <h3 className="text-lg sm:text-xl mt-2">Blox Fruits Trading Guide and Value Calculator</h3>
+      <h4 className="text-lg sm:text-xl mt-2">Latest Blox Fruits Values 2025</h4>
       {/* Insert Google Ad Here */}
       <div className="my-8">
         
@@ -56,22 +58,6 @@ const HomePage = () => {
                 <li>• Take your time to double-check everything before confirming</li>
               </ul>
             </div>
-            <h1>Blox Fruits Values [2025] – Ultimate Trading Resource</h1>
-            <h2>Blox Fruits Values 2025: Updated Tier List</h2>
-            <h3>Blox Fruits Trading Guide and Value Calculator</h3>
-            <!-- Optimized Content (Expandable to 2000 Words) -->
-            <h3><p>Welcome to the #1 resource for <strong>Blox Fruits Values</strong> in 2025! Our site provides the most accurate <strong>Blox Fruits Values</strong> list, updated tier rankings, and a powerful trading guide for Roblox players. Whether you're looking for <strong>Blox Fruits trading values</strong> or a <strong>Blox Fruits value calculator</strong>, we've got you covered.</p><h3/>
-            <h2>Latest Blox Fruits Values 2025</h2>
-              <p>The <strong>Blox Fruits Values</strong> for 2025 are dynamic, reflecting the latest market trends. Top fruits include:</p>
-              <ul>
-                <li><strong>Blox Fruits Values</strong> for Leopard: 5000 Robux</li>
-                <li><strong>Blox Fruits Values</strong> for Dough: 3000 Robux</li>
-                <li><strong>Blox Fruits trading values</strong> for Dragon: 4000 Robux</li>
-              </ul>
-              <p>Check our <a href="/calculator">Blox Fruits value calculator</a> for real-time updates.</p>
-              <h2>Blox Fruits Trading Tips</h2>
-              <p>Maximize your trades with our <strong>Blox Fruits trading guide</strong>. Learn how to use <strong>Blox Fruits Values</strong> to negotiate better deals. Visit our <a href="/tips">trading tips page</a> for more.</p>
-              <h2>Image Optimization</h2>
         </div>
       </div>
     </div>
