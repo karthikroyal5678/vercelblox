@@ -13,7 +13,7 @@ export default defineConfig({
         server.middlewares.use((req, res, next) => {
           // Serve sitemap_index.xml for all matching URLs
           if (req.url?.endsWith('/sitemap_index.xml')) {
-            const sitemapPath = path.resolve(__dirname, 'public/sitemap_index.xml');
+            const sitemapPath = path.resolve(__dirname, 'public/sitemap.xml');
             if (fs.existsSync(sitemapPath)) {
               res.setHeader('Content-Type', 'application/xml'); // Set correct Content-Type
               res.end(fs.readFileSync(sitemapPath)); // Serve the sitemap content
