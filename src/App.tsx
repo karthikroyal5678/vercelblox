@@ -27,7 +27,6 @@ const HomePage = () => {
       {/* Insert Google Ad Here */}
       <div className="my-8">
         
-        <GoogleAd adSlot="6712580132" />
       </div>
 
       {/* Trade Calculator Section */}
@@ -35,6 +34,29 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold text-white mb-8">Trade Calculator</h1>
           <TradeCalculator />
+          <h1>Blox Fruits Values [2025] – Ultimate Trading Resource</h1>
+          <h2>Blox Fruits Values 2025: Updated Tier List</h2>
+          <h3>Blox Fruits Trading Guide and Value Calculator</h3>
+
+
+      <h3><p>Welcome to the #1 resource for <strong>Blox Fruits Values</strong> in 2025! Our site provides the most accurate <strong>Blox Fruits Values</strong> list, updated tier rankings, and a powerful trading guide for Roblox players. Whether you're looking for <strong>Blox Fruits trading values</strong> or a <strong>Blox Fruits value calculator</strong>, we've got you covered.</p><h3/>
+
+      <h2>Latest Blox Fruits Values 2025</h2>
+      <p>The <strong>Blox Fruits Values</strong> for 2025 are dynamic, reflecting the latest market trends. Top fruits include:</p>
+      <ul>
+        <li><strong>Blox Fruits Values</strong> for Leopard: 5000 Robux</li>
+        <li><strong>Blox Fruits Values</strong> for Dough: 3000 Robux</li>
+        <li><strong>Blox Fruits trading values</strong> for Dragon: 4000 Robux</li>
+      </ul>
+      <p>Check our <a href="/calculator">Blox Fruits value calculator</a> for real-time updates.</p>
+
+      <h2>Blox Fruits Trading Tips</h2>
+      <p>Maximize your trades with our <strong>Blox Fruits trading guide</strong>. Learn how to use <strong>Blox Fruits Values</strong> to negotiate better deals. Visit our <a href="/tips">trading tips page</a> for more.</p>
+
+      <!-- Expandable Section for 2000 Words -->
+      <p>[Add 1900 more words here, repeating and expanding on Blox Fruits Values, trading strategies, tier lists, and calculator usage. Include keywords naturally every 50-100 words. Example: "The Blox Fruits Values 2025 list is essential for traders. With Blox Fruits trading values fluctuating, our Blox Fruits value calculator helps. Explore Blox Fruits Values for each fruit..."]</p>
+    </div>
+      <GoogleAd adSlot="6712580132" />
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <div className="bg-gray-800/50 p-6 rounded-lg">
               <h2 className="text-xl font-semibold text-white mb-4">How to Use</h2>
