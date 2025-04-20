@@ -17,6 +17,7 @@
     "@supabase/supabase-js": "^2.49.3",
     "@types/sitemap-generator": "^8.5.5",
     "clsx": "^2.1.0",
+    "esbuild": "^0.25.2",
     "express": "^5.1.0",
     "framer-motion": "^12.6.1",
     "lucide-react": "^0.344.0",

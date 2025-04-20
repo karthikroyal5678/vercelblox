@@ -1,12 +1,16 @@
 User-agent: *
 <<<<<<< HEAD
+<<<<<<< HEAD
 Allow: /
 =======
 Disallow:
 >>>>>>> c26f7ef (first committttttttttttt)
+=======
+Allow:
+>>>>>>> e37f6aebb60cba67b3c384d01ebe5e56e9f602b1
 
 Sitemap: https://bloxfruitsitems.com/sitemap_index.xml
-Sitemap:https://bloxfruitsitems.com/calculator//sitemap_index.xml
+Sitemap:https://bloxfruitsitems.com/calculator/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/common/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/uncommon/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/rare/sitemap_index.xml

@@ -10,6 +10,7 @@
   to = "/sitemap_index.xml"
   status = 200
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 # Redirect all requests to index.html (for SPA apps)
 [[redirects]]
@@ -22,6 +23,8 @@
   from = "/*/sitemap_index.xml"
   to = "/sitemap_index.xml"
   status = 200
+=======
+>>>>>>> e37f6aebb60cba67b3c384d01ebe5e56e9f602b1
 [[headers]]
   for = "/*"
   [headers.values]
@@ -41,4 +44,7 @@
 [[edge_functions]]
   path = "/ssr"
   function = "ssr-page"
+<<<<<<< HEAD
 >>>>>>> c26f7ef (first committttttttttttt)
+=======
+>>>>>>> e37f6aebb60cba67b3c384d01ebe5e56e9f602b1
