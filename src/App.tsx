@@ -23,7 +23,9 @@ const HomePage = () => {
     <div className="text-center py-10 px-4">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">The Most Trusted Value List for Blox Fruits</h2>
       <p className="text-lg sm:text-xl mt-2">NEW! Check out our trade calculator!</p>
-
+      <h1>PLEASE DONATE YOUR AMOUNT </h1>
+      <h2> Most Trusted Value List</h2>
+      <h3> Blox Fruits Values</h3>
 
       {/* Trade Calculator Section */}
       <div className="container mx-auto px-4 mt-16">
