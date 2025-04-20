@@ -1,5 +1,9 @@
 User-agent: *
+<<<<<<< HEAD
 Disallow:
+=======
+Allow:
+>>>>>>> c26f7ef (first committttttttttttt)
 
 Sitemap: https://bloxfruitsitems.com/sitemap_index.xml
 Sitemap:https://bloxfruitsitems.com/calculator//sitemap_index.xml
@@ -87,6 +91,11 @@ Sitemap: https://bloxfruitsitems.com/stock-2024/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/trading-websites/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/top-websites/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/trading-values-2024/sitemap_index.xml
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c26f7ef (first committttttttttttt)
 Sitemap: https://bloxfruitsitems.com/stock-tier-list/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/value-updates/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/stock-price/sitemap_index.xml

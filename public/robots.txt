@@ -1,5 +1,9 @@
 User-agent: *
+<<<<<<< HEAD
 Allow: /
+=======
+Disallow:
+>>>>>>> c26f7ef (first committttttttttttt)
 
 Sitemap: https://bloxfruitsitems.com/sitemap_index.xml
 Sitemap:https://bloxfruitsitems.com/calculator//sitemap_index.xml

@@ -17,3 +17,17 @@
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "no-referrer-when-downgrade"
     Content-Security-Policy = "default-src 'self'"
+<<<<<<< HEAD
+=======
+[[edge_functions]]
+  path = "/hello"
+  function = "hello"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+[[edge_functions]]
+  path = "/ssr"
+  function = "ssr-page"
+>>>>>>> c26f7ef (first committttttttttttt)
