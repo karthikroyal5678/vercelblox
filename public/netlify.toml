@@ -1,4 +1,3 @@
-# Redirect all requests to index.html (for SPA apps)
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -9,22 +8,7 @@
   from = "/*/sitemap_index.xml"
   to = "/sitemap_index.xml"
   status = 200
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-# Redirect all requests to index.html (for SPA apps)
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
-# Redirect any nested sitemap request to the root sitemap_index.xml
-[[redirects]]
-  from = "/*/sitemap_index.xml"
-  to = "/sitemap_index.xml"
-  status = 200
-=======
->>>>>>> e37f6aebb60cba67b3c384d01ebe5e56e9f602b1
 [[headers]]
   for = "/*"
   [headers.values]
@@ -33,6 +17,7 @@
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "no-referrer-when-downgrade"
     Content-Security-Policy = "default-src 'self'"
+
 [[edge_functions]]
   path = "/hello"
   function = "hello"
@@ -44,7 +29,3 @@
 [[edge_functions]]
   path = "/ssr"
   function = "ssr-page"
-<<<<<<< HEAD
->>>>>>> c26f7ef (first committttttttttttt)
-=======
->>>>>>> e37f6aebb60cba67b3c384d01ebe5e56e9f602b1

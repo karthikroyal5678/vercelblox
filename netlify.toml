@@ -18,10 +18,7 @@
     Referrer-Policy = "no-referrer-when-downgrade"
     Content-Security-Policy = "default-src 'self'"
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> e37f6aebb60cba67b3c384d01ebe5e56e9f602b1
 [[edge_functions]]
   path = "/hello"
   function = "hello"
@@ -33,10 +30,3 @@
 [[edge_functions]]
   path = "/ssr"
   function = "ssr-page"
-<<<<<<< HEAD
->>>>>>> c26f7ef (first committttttttttttt)
-=======
-[[edge_functions]]
-  path = "/ssr"
-  function = "ssr-page"
->>>>>>> e37f6aebb60cba67b3c384d01ebe5e56e9f602b1
