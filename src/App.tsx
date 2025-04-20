@@ -23,21 +23,17 @@ const HomePage = () => {
     <div className="text-center py-10 px-4">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">The Most Trusted Value List for Blox Fruits</h2>
       <p className="text-lg sm:text-xl mt-2">NEW! Check out our trade calculator!</p>
-      <h1 className="text-lg sm:text-xl mt-2">Blox Fruits Values [2025] – Ultimate Trading Resource</h1>
-      <h3 className="text-lg sm:text-xl mt-2">Blox Fruits Trading Guide and Value Calculator</h3>
-      <h4 className="text-lg sm:text-xl mt-2">Latest Blox Fruits Values 2025</h4>
-      {/* Insert Google Ad Here */}
-      <div className="my-8">
-        
-      </div>
+
 
       {/* Trade Calculator Section */}
       <div className="container mx-auto px-4 mt-16">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold text-white mb-8">Trade Calculator</h1>
           <TradeCalculator />
-          <GoogleAd adSlot="6712580132" />
-          
+                {/* Insert Google Ad Here */}
+          <div className="my-8">
+            <GoogleAd adSlot="6712580132" />
+          </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             <div className="bg-gray-800/50 p-6 rounded-lg">
               <h2 className="text-xl font-semibold text-white mb-4">How to Use</h2>
