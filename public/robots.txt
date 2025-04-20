@@ -1,8 +1,8 @@
 User-agent: *
-Allow: /
+Allow:
 
 Sitemap: https://bloxfruitsitems.com/sitemap_index.xml
-Sitemap:https://bloxfruitsitems.com/calculator//sitemap_index.xml
+Sitemap:https://bloxfruitsitems.com/calculator/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/common/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/uncommon/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/rare/sitemap_index.xml

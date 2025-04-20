@@ -9,3 +9,22 @@
   from = "/*/sitemap_index.xml"
   to = "/sitemap_index.xml"
   status = 200
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Content-Security-Policy = "default-src 'self'"
+[[edge_functions]]
+  path = "/hello"
+  function = "hello"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+[[edge_functions]]
+  path = "/ssr"
+  function = "ssr-page"
