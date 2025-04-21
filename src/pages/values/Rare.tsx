@@ -4,7 +4,7 @@ import { FaStar} from "react-icons/fa";
       name: "Rubber",
       category: "Rare",
       status: "Stable",
-      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Ffruits%2FRare%2FRubber_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />, // Updated to use uploaded image
+      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Ffruits%2FRare%2FRubber_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />,
       value: 700000,
       demand: "2/10",
     },

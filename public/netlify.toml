@@ -1,3 +1,4 @@
+# Redirect all requests to index.html (for SPA apps)
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -8,7 +9,6 @@
   from = "/*/sitemap_index.xml"
   to = "/sitemap_index.xml"
   status = 200
-
 [[headers]]
   for = "/*"
   [headers.values]
@@ -17,7 +17,6 @@
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     Referrer-Policy = "no-referrer-when-downgrade"
     Content-Security-Policy = "default-src 'self'"
-
 [[edge_functions]]
   path = "/hello"
   function = "hello"

@@ -4,7 +4,7 @@ import { FaStar} from "react-icons/fa";
       name: "Flame",
       category: "UnCommon",
       status: "Stable",
-      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Ffruits%2FUncommon%2FFlame_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />, // Updated to use uploaded image
+      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Ffruits%2FUncommon%2FFlame_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />, 
       value: 250000,
       demand: "1/10",
     },

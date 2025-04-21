@@ -5,7 +5,7 @@ const items = [
     name: "Rocket",
     category: "Common",
     status: "Stable",
-    icon: <img src="https://bloxfruitsvalues.org/pfruits/Permanent-Rocket.webp" alt="Rocket" className="h-24 w-24 mx-auto" />, // Updated to use uploaded image
+    icon: <img src="https://bloxfruitsvalues.org/pfruits/Permanent-Rocket.webp"  className="h-24 w-24 mx-auto" />,
     value: 5000,
     demand: "1/10",
   },
@@ -13,7 +13,7 @@ const items = [
     name: "Spin",
     category: "Common",
     status: "Stable",
-    icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Ffruits%2FCommon%2FSpin_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />, 
+    icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Ffruits%2FCommon%2FSpin_Icon.webp&w=256&q=75" className="h-24 w-24 mx-auto" />, 
     value: 7500,
     demand: "1/10",
   },

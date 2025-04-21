@@ -4,7 +4,7 @@ import { FaStar} from "react-icons/fa";
       name: "Fast Boats",
       category: "UnCommon",
       status: "Stable",
-      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Fgamepasses%2FFast%20Boats_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />, // Updated to use uploaded image
+      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Fgamepasses%2FFast%20Boats_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />,
       value: 1000000,
       demand: "1/10",
     },
@@ -44,7 +44,7 @@ import { FaStar} from "react-icons/fa";
       name: "Legendary Scrolls",
       category: "UnCommon",
       status: "Stable",
-      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Fgamepasses%2FLegendary%20Scrolls_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />, // Updated to use uploaded image
+      icon: <img src="https://bloxfruitsvalues.com/_next/image?url=%2Fassets%2Fgamepasses%2FLegendary%20Scrolls_Icon.webp&w=256&q=75" alt="Rocket" className="h-24 w-24 mx-auto" />,
       value: 2750000,
       demand: "4/10",
     },

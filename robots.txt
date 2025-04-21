@@ -1,8 +1,8 @@
 User-agent: *
-Allow:
+Allow: /
 
 Sitemap: https://bloxfruitsitems.com/sitemap_index.xml
-Sitemap:https://bloxfruitsitems.com/calculator//sitemap_index.xml
+Sitemap: https://bloxfruitsitems.com/calculator/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/common/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/uncommon/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/values/rare/sitemap_index.xml
@@ -11,7 +11,7 @@ Sitemap: https://bloxfruitsitems.com/values/mythical/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/guide/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/login/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/register/sitemap_index.xml
-Sitemap:https://bloxfruitsitems.com/forgot-password/sitemap_index.xml
+Sitemap: https://bloxfruitsitems.com/forgot-password/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/donate/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/search?query=blox+fruit+value/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/search?query=blox+fruit+values/sitemap_index.xml
@@ -90,7 +90,7 @@ Sitemap: https://bloxfruitsitems.com/trading-values-2024/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/stock-tier-list/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/value-updates/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/stock-price/sitemap_index.xml
-Sitemap:https://bloxfruitsitems.com/stock-monitor/sitemap_index.xml
+Sitemap: https://bloxfruitsitems.com/stock-monitor/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/stock-market/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/value-comparison/sitemap_index.xml
 Sitemap: https://bloxfruitsitems.com/trade-deals/sitemap_index.xml
