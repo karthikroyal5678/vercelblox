@@ -26,6 +26,7 @@ const GoogleAd: React.FC<GoogleAdProps> = ({ adSlot, format = "autorelaxed" }) =
     }
   }, []);
 
+  
   return (
     <ins
       className="adsbygoogle"
