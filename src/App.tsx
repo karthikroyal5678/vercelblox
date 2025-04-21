@@ -32,11 +32,7 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl font-bold text-white mb-8">Trade Calculator</h1>
           <TradeCalculator />
-<<<<<<< HEAD
-                {/* Insert Google Ad Here */}
-=======
-          {/* Insert Google Ad Here */}
->>>>>>> c26f7ef (first committttttttttttt)
+
           <div className="my-8">
             <GoogleAd adSlot="6712580132" />
           </div>
